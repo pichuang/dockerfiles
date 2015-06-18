@@ -8,6 +8,7 @@ MAINTAINER FUJITA Tomonori <fujita.tomonori@lab.ntt.co.jp>
 
 RUN apt-get update
 RUN apt-get install -qy --no-install-recommends python-setuptools python-pip python-eventlet python-lxml python-msgpack python-netaddr python-oslo.config python-paramiko python-routes python-six python-webob unzip wget
+RUN pip install -U netaddr six pbr
 
 ENV HOME /root
 WORKDIR /root
